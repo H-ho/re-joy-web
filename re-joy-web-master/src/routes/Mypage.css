@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+		<style>
+            body {background-color: rgba(30,30,30,0.4);}
+            div {
+                margin:auto;
+                background-color: rgba(30,30,30,0.4);
+			    text-align: left;
+			    border:5px solid #A566FF;
+			    padding:20px;
+            }
+            h1 {
+			color:white;
+			font-size:150%;
+			font-weight:bold;
+		    }
+			.container{
+                height:300px;
+				display:flex;
+				flex-direction:row;
+			}
+			.starlist{
+				background-color:gray;
+				color:white;
+                border:0;
+                position:relative;
+                top:-19px;
+                height:298px;
+                flex-grow:2;
+            }
+            button{
+                border-radius: 5px;
+                width:30px;
+                background-color:white;
+                color:gray;
+                height:30px;
+            }
+            .setting{
+                position:absolute;
+                top:500px;
+                height:100px;
+                width:300px;
+            }
+            p{
+                font-size:20px;
+            }
+		</style>
+	</head>
+	<body>
+        /* <!-- 즐겨찾기 체크된 영화 표시 --> */
+        <p>
+        <h1>나의 즐겨찾기 콘텐츠</h1>
+		<div class="container">
+            <button> < </button>
+			<div class="starlist">image</div>
+            <button> > </button>
+        </div>
+        </p>
+        
+        <p>
+        <h1>설정</h1>
+        <div class="setting">
+            <p>
+                <a href="">계정관리</a>
+            </p>
+            <p>
+                <a href="">환경설정</a>
+            </p>
+        </div>
+        </p>
+	</body>
+</html>
